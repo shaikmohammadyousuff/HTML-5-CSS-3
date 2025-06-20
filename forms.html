@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+    position:relative;
+    justify-content: space-between;
+    background-color: #343a40;
+    display: flex;
+    height: 100px;
+}
+.nav-links{
+display: flex;
+list-style: none;
+/* margin-left: 105px; */
+
+}
+.nav-links li{
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.logo{
+    width:20%;
+    height:90px;
+}
+ legend {
+      font-weight: bold;
+      color: darkblue;
+      padding: 20px;
+    }
+    label
+    {
+        display:inline-block;
+        width: 150px;
+        margin-bottom: 10px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 200px;
+      padding: 5px;
+      background-color: #eaf6ff;
+      border: 1px solid #333;
+    }
+    form{
+        left:100px;
+    }
+    fieldset{
+        border: 1px solid #333;
+    }
+    select {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.userName input[type="text"]{
+    text-align: left;
+    left: 0;
+}
+#addre{
+    height:10px;
+}
+.hob{
+    align-items: center;
+    width: 0;
+}
+.center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#img{
+    width: 50%;
+}
+#img:hover{
+    width: auto;
+    height: 50px;
+}
+li#c::marker{
+    color: yellow;
+}
+li#r::marker{
+    color:red;
+}
+li#s::marker{
+    color: orange;
+}
+li#k::marker{
+    color:violet
+}
+.cs{
+    margin: 50px auto;
+    width:41.05%;
+    border-left: 10px dotted black;
+    border-right: 10px dashed black;
+}
+    </style>
+</head>
+<body>
+    <!-- forms <></>, action
+     label => for
+     input => type , name ,id , placeholder, min length,max length, size,required field, disabled.
+     type 
+
+     1)input
+     2)password
+     3)email
+     4)number
+     5)tel
+     6)range
+     7)color
+     8)date,time,month
+     9)localdate-time
+     10)radio
+     11)checkbox
+     12)select, dropdown =>option
+     13)textarea
+     14)file drag n drop
+     15) fieldset => legend 
+     16)submit 
+     17)reset
+
+    -->
+     <!-- navbar starts -->
+      <nav  class="navbar">
+        
+    <img height="150px" class="logo" src="./assessts/logo-white.png">
+    
+    <div class="nav-links">
+        <li><a href="./table.html" >Table Task  </a></li>
+           <li><a href="./list.html">List Task  </a></li>
+            <li> <a href="yuio">Internship  </a></li>
+            <li> <a href="qwertyuiop">Existing Students </a></li>
+            <li><a href="#footer">About Us  </a></li>
+    </div>
+    </nav>
+      <!-- navber ends -->
+       <!-- center div -->
+       <div class="center">
+
+           <form action="#">
+               <h1 style="width: 100%; align-items:center">User Registration Form</h1>
+               <fieldset style="width: 400px;  border:1px dotted #333;">
+                   
+                   <legend>Personal Information</legend>
+                   <label for="name">Name: </label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <label for="email">Email Address: </label>
+            <input type="text" id="email" placeholder="Enter your email">
+            <label for="pass"> Password: </label>
+            <input type="text" id="pass" placeholder="Enter your Password">
+            <label for="cpass">Confirm Password: </label>
+            <input type="text" id="cpass" placeholder="Confirm your password">
+            
+        </fieldset>
+        
+        <fieldset style="flex-direction:row; border:1px dotted #333; display:inline-block; width:400px;">
+
+                <legend>Address Details</legend>
+                <label for="adlineone">Address Line one: </label>
+                <input type="text" id="adlineone" placeholder="Enter Address Line One">
+                <label for="adlinetwo">Address Line two: </label>
+                <input type="text" id="adlinetwo" placeholder="Enter Address line two">
+                <label for="Tcty">Town/City</label>
+                <input type="text" id="Tcty" placeholder="Enter your Town / City">
+                <label for="zpce">Zip / Post code: </label>
+                <input type="text" id="zpce" placeholder="Enter your post code">
+                
+                <button   style="margin-top:10px;" >Sign-Up</button>
+            </fieldset>
+        </form>
+    </div>
+    <!-- second form -->
+    <div class="center">
+
+        
+        <form action="https://www.youtube.com" style="margin-top:50px; border:1px dotted black; padding:10px; width:46%;background: linear-gradient(to bottom, #1e90ff, #87cefa);margin-left:50px; align-items:center; text-align:center;">
+            <div class="userName" style="width: 300px; margin-bottom:10px; display:flex; justify-content:space-between; align-content:center">
+                <label for="fn">First Name: </label>
+            <input type="text" id="fn" placeholder="Enter First Name">
+        </div>
+        <div class="userName" style="width: 300px; margin-bottom:10px; display:flex; justify-content:space-between; align-content:center">
+            
+            <label for="ln">Last Name: </label>
+            <input type="text" id="ln" placeholder="Enter Last Name">
+        </div>
+        <div class="userName" style="width: 300px; margin-bottom:10px; display:flex; justify-content:space-between; align-content:left;">
+            
+            <label for="email">Email Id: </label>
+            <input type="text" id="email" placeholder="abcd@gmail.com">
+        </div>
+<div class="userName" style="width: 400px; margin-bottom:10px; display:flex; justify-content:space-between; align-content:center">
+
+    <label for="">Gender: </label>
+    <label for="gen">
+        <input type="radio" name="gender" value="male" >
+        Male
+    </label>
+    <label for="gen">
+        <input type="radio" name="gender" value="female">
+        Female
+    </label>
+    <label for="gen">
+        <input type="radio" name="gender" value="other">
+        Other
+    </label>
+</div>
+<div  style="width:300px; margin-bottom:10px; display:flex; justify-content:space-between; ">
+    <label for="addre">Address: </label>
+    <input type="text" name="Address" id="addre" placeholder="Enter your Address in detail" style=" height:300px;">
+</div>
+<div class="userName" style="width: 300px; margin-bottom:10px; display:flex; justify-content:space-between; align-content:center">
+    
+    <label for="city">City: </label>
+    <input type="text" placeholder="Banglore" id="city">
+</div>
+<div class="userName" style="width: 300px; margin-bottom:10px; display:flex; justify-content:space-between; align-content:center">
+    <label for="pincode">Pincode: </label>
+    <input type="text" id="pincode" placeholder="522004">
+</div>
+<div  style="width: 300px; margin-bottom:10px; display:flex; justify-content:space-between; align-content:center">
+    <label for="state">State:</label>
+    <input type="text" placeholder="Choose a state">
+    <select name="state" id="state">
+        <option value="Andhra Pradesh"></option>
+        <option value="Arunachal pardesh"></option>
+        <option value="Andaman and Nicobar"></option>
+        <option value="Assam"></option>
+        <option value="Bihar"></option>
+    </select>
+</div>
+<div  style="width: 300px; margin-bottom:10px; display:flex; justify-content:space-between; align-content:center">
+    <label for="country">Country:</label>
+    <input type="text" id="country" placeholder="India">
+</div>
+<div class="hob" style="width:400px; margin-bottom:10px; display:flex; justify-content:space-between; align-content:center">
+    <label for="hob">Hobbies:</label>
+    <input type="checkbox" name="hobbies" id="hob">Drawing
+    <input type="checkbox" name="hobbies" id="hob">Singing
+    <input type="checkbox" name="hobbies" id="hob">Dancing
+    <br>
+    <input type="checkbox">Sketching 
+    <br>
+    <input type="checkbox">Others
+    <input type="text" placeholder="Ex;- Teaching">
+</div>
+
+
+<label for="qual">Qualification: </label>
+<input type="checkbox" name="Qualification" value="High School">High School(10th) 
+<input type="checkbox" name="Qualification" value="Higer School">Higher School(12th) 
+<label for="Qualification"><input type="checkbox" name="Qualification" value="Graduation">Graduation(Bachelors) </label>
+<input type="checkbox" name="Qualification" value="Post Graduation">Post Graduation(Masters) 
+
+<input type="checkbox" name="Qualification" value="Phd">Phd
+</div>
+
+</div>
+
+<div class="center" id="img">
+    <img src="./assessts/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.webp" >
+</div>
+</form>
+
+    <ul>
+        <li id="c">CSK</li>
+        <li id="r">RCB</li>
+        <li id="s">SRH</li>
+        <li id="k">KKR</li>
+    </ul>
+<div class="cs">
+    <img src="./assessts/istockphoto-517188688-612x612.jpg" alt="not found">
+</div>
+    </body>
+    </html>
